@@ -1,0 +1,119 @@
+{ 
+  
+  "future":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.Future"}
+  ],
+  
+  "max":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.Max"},
+	{"parameter_1": "value"}	
+  ],
+  
+  "min":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.Min"},
+	{"parameter_1": "value"}	
+  ],
+  
+  "notnull":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.NotNull"}
+  ],
+  
+  "past":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.Past"}
+  ],
+  
+  "pattern":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.Pattern"},
+	{"parameter_1": "regexp"}	
+  ],
+  
+  "size":[
+    {"target":"attribute"},
+	{"annotationPath":"javax.validation.constraints.Size"},
+	{"parameter_1": "max"},
+	{"parameter_2": "min"},
+  ],
+  
+  "email":[
+    {"target":"attribute"},
+	{"annotationPath":"org.hibernate.validator.constraints.Email"}	
+  ],
+  
+  "notblank":[
+    {"target":"attribute"},
+	{"annotationPath":"org.hibernate.validator.constraints.NotBlank"}	
+  ],
+  
+  "notempty":[
+    {"target":"attribute"},
+	{"annotationPath":"org.hibernate.validator.constraints.NotEmpty"}	
+  ],
+  
+  "range":[
+    {"target":"attribute"},
+	{"annotationPath":"org.hibernate.validator.constraints.Range"},
+	{"parameter_1": "max"},
+	{"parameter_2": "min"},
+  ],
+  
+  "cpf":[
+    {"target":"attribute"},
+	{"annotationPath":"org.hibernate.validator.constraints.br.CPF"}	
+  ],
+       
+  "CheckLocalidade":[
+    {"target":"attribute"},
+	{"annotationPath":"tarefa3.CheckLocalidade"},
+	{"value":"1234"}	
+  ],
+      
+  "ValidDate":[
+    {"target":"attribute"},
+	{"annotationPath":"tarefa3.ValidDate"},
+	{"format":"ddHHmm"}	
+  ], 
+    
+  "WindCheck":[
+    {"target":"attribute"},
+	{"annotationPath":"tarefa3.WindCheck"},
+	{"value":"123"}	
+  ],
+  
+  "TemperatureCheck":[
+    {"target":"attribute"},
+	{"annotationPath":"tarefa3.TemperatureCheck"},
+	{"value":"123"}	
+  ],
+  
+  "QnhCheck":[
+    {"target":"attribute"},
+	{"annotationPath":"tarefa3.QnhCheck"},
+	{"value":"123"}	
+  ],
+  
+  "cnpj":[
+    {"target":"attribute"},
+	{"annotationPath":"org.hibernate.validator.constraints.br.CNPJ"}	
+  ],
+  
+  "restcontroller":[
+    {"target":"class"},
+	{"annotationPath":"org.springframework.web.bind.annotation.RestController"}
+  ],  
+  "autowired":[
+    {"target":"attribute"},
+	{"annotationPath":"org.springframework.beans.factory.annotation.Autowired"}
+  ],
+  "requestmapping":[
+    {"target":"method"},
+	{"annotationPath":"org.springframework.web.bind.annotation.RequestMapping"},
+	{"parameter_1": "value"}
+  ]
+  
+}

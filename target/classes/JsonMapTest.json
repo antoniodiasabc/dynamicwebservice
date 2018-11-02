@@ -1,0 +1,34 @@
+{ "entity":[
+    {"target":"class"},
+	{"annotationPath":"javax.persistence.Entity"}
+  ],
+  
+  "column":[
+    {"target":"method"},
+	{"annotationPath":"javax.persistence.Column"},
+	{"parameter_1": "name"},
+	{"parameter_2": "nullable"}
+   ],
+   
+  "oneToOne":[
+    {"target":"method"},
+	{"annotationPath":"javax.persistence.OneToOne"}	
+   ],
+     
+ "ruleClass":[
+    {"target":"class"},
+	{"annotationPath":"org.esfinge.aom.model.rolemapper.metadata.annotations.RuleClass"}
+  ],
+  
+  "ruleObject":[
+    {"target":"method"},
+	{"annotationPath":"org.esfinge.aom.model.rolemapper.metadata.annotations.RuleMethod"}
+   ],
+   
+  "ruleAttribute":[
+    {"target":"method"},
+	{"annotationPath":"org.esfinge.aom.model.rolemapper.metadata.annotations.RuleAttribute"},
+	{"parameter_1":"dataFabricacao"},
+	{"parameter_2":"perecivel"}
+   ]
+}

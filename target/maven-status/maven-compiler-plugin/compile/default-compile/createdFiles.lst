@@ -1,0 +1,17 @@
+hello\PropertyConfiguration.class
+hello\MeuBeanRegistration2.class
+entity\SensorProperty.class
+hello\Greeting.class
+entity\Sensor.class
+entity\ISensor.class
+hello\ObjectPrinter.class
+entity\MetadatasAccountType.class
+hello\MeuBeanRegistration3.class
+hello\GreetingControllerNew.class
+hello\MeuBeanRegistration.class
+hello\GreetingController.class
+hello\Application.class
+entity\SensorType.class
+entity\SensorPropertyType.class
+hello\DynamicFactoryBean.class
+hello\DynamicArgumentResolver.class

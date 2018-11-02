@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Configuração de WebServices</title>
+	
+<script src="../api/jquery/jquery-3.1.1.min.js"></script>
+<script src="../api/jquery-ui-1.12.0/jquery-ui.min.js"></script>
+	
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<script type="text/javascript">
+var index = 3;
+	$(document).ready(function() {
+
+		$('#Confirmar').on('click', function(e) {
+			if ($('#nome').val()) {
+				index++;
+				//alert(index);
+				$.get("/insere", {
+					nome : $('#nome').val(),
+					regra : $('#regra').val(),
+					data : $('#data').val(),
+					data2 : $('#data2').val(),
+					index : index
+				}, function(data) {
+					alert('Configuração efetuada com sucesso ');
+				});
+
+			} else {
+				alert('Preencha os campos obrigatórios');
+			}
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="header"></div>
+
+	<h3 align="center">Comportamento Dinamico - Configuração de
+		WebServices</h3>
+
+	<div class="teste" id="testes">
+		<div id="principal"></div>
+		<form action="insere" method="post">
+			<table>
+				<tr>
+					<td><label>Nome no WebService 
+					<input type="text"
+							width="5" name="nome" id="nome"  size="20"
+							maxlength="20" value="" />
+							</label>
+					<label>Nome da Regra 
+					<input
+							type="text" width="5" name="regra" id="regra" size="30"
+							maxlength="30" value="" />
+					</label>
+					<label>1o Dado 
+					<input type="text" width="5" name="data" id="data" size="20"
+						maxlength="20" value="" />
+						</label>
+					<label>2o Dado 
+					<input type="text" width="5" name="data2" id="data2" size="20"
+						maxlength="20" value="" />
+						</label></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="button" value="Confirmar" id="Confirmar" /></td>
+					<td></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
